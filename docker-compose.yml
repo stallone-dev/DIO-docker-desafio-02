@@ -1,0 +1,10 @@
+name: dio-me-challenger-docker-02
+
+services:
+  apache:
+    image: httpd:2.4.62
+    container_name: my_html
+    ports:
+      - 80:80
+    volumes:
+      - ./public:/usr/local/apache2/htdocs
