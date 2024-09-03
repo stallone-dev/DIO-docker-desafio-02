@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Docker challenger 02</title>
-</head>
-<body>
-    <header>
-        <h1>Desafio Docker-02</h1>
-        <h4>02/09/2024</h4>
-    </header>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My pokedex - Stallone L.S.</title>
 
-    <main>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae culpa enim atque autem, quis rem sed, dignissimos doloremque error iste deleniti est. Minima in est inventore, quod aperiam numquam porro.
-        </p>
-    </main>
-</body>
+        <link
+            rel="shortcut icon"
+            href="assets/imgs/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <!-- Normalization -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Text fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Project style -->
+        <link rel="stylesheet" href="./assets/styles/global.css" />
+        <link rel="stylesheet" href="./assets/styles/pokedex.css" />
+    </head>
+    <body>
+        <!-- Header bar -->
+        <header>
+            <h1>Pokedex</h1>
+        </header>
+
+        <!-- Main page viwer -->
+        <main>
+            <ol class="poke-index">
+                <!-- Pokemons card -->
+            </ol>
+        </main>
+
+        <section class="pagination">
+            <button type="button" id="loadMore">Load More</button>
+        </section>
+
+        <!-- Fotter bar to description and copyrights-->
+        <footer>
+            <h4>in/stallone-souza</h4>
+            <h4>@stallone-dev</h4>
+        </footer>
+
+        <script src="assets/scripts/poke-model.js"></script>
+        <script src="assets/scripts/poke-api.js"></script>
+        <script src="assets/scripts/main.js"></script>
+    </body>
 </html>
